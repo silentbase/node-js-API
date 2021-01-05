@@ -12,4 +12,4 @@ var mapRouter = require('./routes/mapRoutes')
 
 app.use('/user', userRouter);
 app.use('/map', mapRouter);
-app.listen(2000);
+app.listen(process.env.PORT || 2000);

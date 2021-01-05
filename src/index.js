@@ -3,7 +3,7 @@ var app = express();
 var bodyparser = require('body-parser');
 var mongoose= require('mongoose');
 
-mongoose.connect("mongodb://localhost/berlinStreetsDB", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://silentbase:onepiece123@cluster0.yx2xi.mongodb.net/BerlinStreetsDB", {useNewUrlParser: true, useUnifiedTopology: true});
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 

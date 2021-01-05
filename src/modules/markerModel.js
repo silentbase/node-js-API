@@ -6,7 +6,9 @@ const markerSchema = mongoose.Schema({
     title : String,
     street: String,
     houseNumber: String,
-    postcode: String,
+    postalcode: String,
+    langt: String,
+    longt: String
 });
 
 const marker = mongoose.model('Marker',markerSchema);

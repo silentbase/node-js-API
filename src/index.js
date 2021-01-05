@@ -12,4 +12,9 @@ var mapRouter = require('./routes/mapRoutes')
 
 app.use('/user', userRouter);
 app.use('/map', mapRouter);
+
+app.get('/', function(req, res){
+    res.send('Welcome to berlinStreets');
+})
+
 app.listen(process.env.PORT || 2000);
